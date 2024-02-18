@@ -18,8 +18,6 @@ allprojects{
 // 서브 프로젝트 전체에 적용.
 subprojects{
 	apply plugin: 'java'
-	// 위에서 불러온 plugin 을 적용 시켰으므로 버전을 명시하지
-	// 않아도 자식 프로젝트에서 2.7.7 버전을 받게된다.
 	apply plugin: 'org.springframework.boot'
 	apply plugin: 'io.spring.dependency-management'
 
