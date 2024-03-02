@@ -14,20 +14,20 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class UserUpdateService {
 
-    private final UserFindService userFindService;
+    private final UserFinder userFinder;
 
     public void updateNickname(UpdateNicknameData data) {
-        UserEntity user = userFindService.getUserById(data.getUserId());
+        UserEntity user = userFinder.getUserById(data.getUserId());
         user.getUserInfo().updateNickname(data.getNickname());
     }
 
     public void updateMajor(UpdateMajorData data) {
-        UserEntity user = userFindService.getUserById(data.getUserId());
+        UserEntity user = userFinder.getUserById(data.getUserId());
         user.getUserTypeInfo().updateMajor(data.getMajor());
     }
 
     public void updatePassword(UpdatePasswordData data) {
-        UserEntity user = userFindService.getUserByEmail(data.getEmail());
+        UserEntity user = userFinder.getUserByEmail(data.getEmail());
         user.getUserInfo().updatePassword(data);
     }
 }

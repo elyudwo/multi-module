@@ -1,20 +1,18 @@
 package com.example.core.user.service;
 
 import com.example.core.user.domain.UserEntity;
-import com.example.core.user.dto.data.SignInData;
 import com.example.core.user.repository.UserRepository;
-import com.example.core.user.util.PasswordEncoder;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import static com.example.core.user.util.PasswordEncoder.encode;
-import static com.example.core.user.util.PasswordEncoder.matches;
+import static com.example.core.common.util.PasswordEncoder.encode;
+import static com.example.core.common.util.PasswordEncoder.matches;
 
 @Service
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
-public class UserValidateService {
+public class UserValidater {
 
     private final UserRepository userRepository;
 
@@ -22,6 +20,10 @@ public class UserValidateService {
         if (userRepository.existsByUserInfo_Email(email)) {
             throw new RuntimeException();
         }
+    }
+
+    public void validateExistUserId(Long userId) {
+        userRepository.findById(userId).orElseThrow(RuntimeException::new);
     }
 
     public void verifyPassword(Long userId, String password) {

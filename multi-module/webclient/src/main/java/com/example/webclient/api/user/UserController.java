@@ -22,8 +22,7 @@ public class UserController {
 
     private final UserService userService;
     private final UserUpdateService userUpdateService;
-    private final UserValidateService userValidateService;
-    private final UserImageService userImageService;
+    private final UserValidater userValidater;
 
     @Operation(summary = "회원가입")
     @PostMapping("/v1/users/signup")
@@ -80,28 +79,28 @@ public class UserController {
     @Operation(summary = "비밀번호 검증", description = "Http 헤더에 JWT를 보내주세요.")
     @PostMapping("/v1/users/password/verify")
     public ResponseEntity<HttpStatus> verifyPassword(@RequestBody VerifyPasswordRequest request, UserId userId) {
-        userValidateService.verifyPassword(userId.getId(), request.getPassword());
+        userValidater.verifyPassword(userId.getId(), request.getPassword());
         return ResponseEntity.ok().build();
     }
 
     @Operation(summary = "닉네임 중복 검사")
     @GetMapping("/v1/users/duplication-nickname")
     public ResponseEntity<HttpStatus> nicknameDuplicationValid(@RequestParam String nickname) {
-        userValidateService.validateExistUserEmail(nickname);
+        userValidater.validateExistUserEmail(nickname);
         return ResponseEntity.ok().build();
     }
 
     @Operation(summary = "회원 사진 저장", description = "Http 헤더에 JWT를 보내주세요.")
     @PutMapping("/v1/users/image")
     public ResponseEntity<HttpStatus> uploadImage(UserId userId, @RequestPart(name = "image", required = false) MultipartFile image) throws IOException {
-        userImageService.uploadUserImage(userId.getId() ,image);
+        userService.uploadUserImage(userId.getId() ,image);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @Operation(summary = "회원 사진 삭제", description = "Http 헤더에 JWT를 보내주세요.")
     @DeleteMapping("/v1/users/image")
     public ResponseEntity<HttpStatus> deleteImage(UserId userId) {
-        userImageService.deleteUserImage(userId.getId());
+        userService.deleteUserImage(userId.getId());
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 

@@ -2,14 +2,13 @@ package com.example.core.user.domain;
 
 import com.example.core.user.dto.data.SignInData;
 import com.example.core.user.dto.data.UpdatePasswordData;
-import com.example.core.user.util.PasswordEncoder;
 import jakarta.persistence.Embeddable;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import static com.example.core.user.util.PasswordEncoder.encode;
-import static com.example.core.user.util.PasswordEncoder.matches;
+import static com.example.core.common.util.PasswordEncoder.encode;
+import static com.example.core.common.util.PasswordEncoder.matches;
 
 @Embeddable
 @Getter

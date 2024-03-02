@@ -6,7 +6,7 @@ import com.example.core.user.domain.UserEntity;
 import com.example.core.user.domain.UserImage;
 import com.example.core.user.domain.UserInfo;
 import com.example.core.user.domain.UserTypeInfo;
-import com.example.core.user.util.PasswordEncoder;
+import com.example.core.common.util.PasswordEncoder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

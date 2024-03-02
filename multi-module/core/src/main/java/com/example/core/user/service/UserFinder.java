@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
-public class UserFindService {
+public class UserFinder {
 
     private final UserRepository userRepository;
 
