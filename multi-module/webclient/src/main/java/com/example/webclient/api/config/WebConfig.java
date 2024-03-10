@@ -1,5 +1,6 @@
 package com.example.webclient.api.config;
 
+import com.example.webclient.api.study.resolver.QueryStringArgumentResolver;
 import com.example.webclient.api.user.resolver.UserIdArgumentResolver;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
@@ -14,6 +15,7 @@ import java.util.List;
 public class WebConfig implements WebMvcConfigurer {
 
     private final UserIdArgumentResolver userIdArgumentResolver;
+    private final QueryStringArgumentResolver queryStringArgumentResolver;
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
@@ -25,5 +27,6 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> resolvers) {
         resolvers.add(userIdArgumentResolver);
+        resolvers.add(queryStringArgumentResolver);
     }
 }

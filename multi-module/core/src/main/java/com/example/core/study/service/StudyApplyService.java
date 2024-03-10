@@ -25,9 +25,10 @@ import java.util.List;
 public class StudyApplyService {
 
     private final StudyRepository studyRepository;
+    private final StudyValidator studyValidator;
     private final UserValidater userValidater;
 
-    public void enroll(Long userId, EnrollApplyData data) {
+    public void enroll(EnrollApplyData data, Long userId) {
         userValidater.validateExistUserId(userId);
         StudyEntity study = studyRepository.findById(data.getStudyId()).orElseThrow();
         study.validateApply(userId);
@@ -40,24 +41,27 @@ public class StudyApplyService {
     public void acceptApply(AcceptApplyData data, Long userId) {
         userValidater.validateExistUserId(userId);
         StudyEntity study = studyRepository.findById(data.getStudyId()).orElseThrow();
-        study.acceptApply(userId);
+        study.acceptApply(data.getAcceptUserId());
     }
 
     public void rejectApply(RejectApplyData data, Long userId) {
         userValidater.validateExistUserId(userId);
+        userValidater.validateExistUserId(data.getRejectedUserId());
         StudyEntity study = studyRepository.findById(data.getStudyId()).orElseThrow();
-        study.rejectApply(userId, data.getRejectReason());
+        study.rejectApply(data.getRejectedUserId(), data.getRejectReason());
     }
 
     public void deleteMyStudy(Long userId, Long studyId) {
+        userValidater.validateExistUserId(userId);
+        studyValidator.validateStudyExist(studyId);
         StudyEntity study = studyRepository.findById(studyId).orElseThrow();
         study.deleteApply(userId);
     }
 
-//    @Transactional(readOnly = true)
-//    public FindMyApplyResponse findApply(Long userId, final int page, final int size) {
-//
-//        Slice<StudyApplyDaoByUserId> applyDao = Converter.toSlice(PageRequest.of(page, size), studyRepository.findApplyByUserId(userId));
-//        return new FindMyApplyResponse(5L, applyDao);
-//    }
+    @Transactional(readOnly = true)
+    public FindMyApplyResponse findApply(Long userId, final int page, final int size) {
+        userValidater.validateExistUserId(userId);
+        Slice<StudyApplyDaoByUserId> applyDao = Converter.toSlice(PageRequest.of(page, size), studyRepository.findApplyByUserId(userId));
+        return new FindMyApplyResponse(5L, applyDao);
+    }
 }

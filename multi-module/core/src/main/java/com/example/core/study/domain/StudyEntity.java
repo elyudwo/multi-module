@@ -118,11 +118,11 @@ public class StudyEntity extends BaseTimeEntity {
         this.studyApplies = applies;
     }
 
-    public void acceptApply(Long userId) {
+    public void acceptApply(Long acceptId) {
         List<StudyApply> applies = new ArrayList<>();
 
         for(StudyApply apply : studyApplies) {
-            if(apply.getUserId().equals(userId)) {
+            if(apply.getUserId().equals(acceptId)) {
                 apply.acceptApply();
                 applies.add(apply);
                 continue;

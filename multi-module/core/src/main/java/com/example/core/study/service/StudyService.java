@@ -49,9 +49,9 @@ public class StudyService {
         study.getStudyConstraints().close();
     }
 
-//    public void deleteAllStudyByUserId(Long userId) {
-//        userValidateService.validateExistUserId(userId);
-//        studyRepository.deleteAllStudyPostByUserId(userId);
-//    }
+    public void deleteAllStudyByUserId(Long userId) {
+        userValidater.validateExistUserId(userId);
+        studyRepository.deleteAllStudyByUserId(userId);
+    }
 
 }

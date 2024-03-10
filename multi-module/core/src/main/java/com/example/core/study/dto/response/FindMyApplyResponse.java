@@ -12,8 +12,8 @@ import static com.example.core.common.util.Converter.convertDaoToData;
 @Getter
 public class FindMyApplyResponse {
 
-    private Long totalCount;
-    Slice<ApplyData> applyData;
+    private final Long totalCount;
+    private final Slice<ApplyData> applyData;
 
     public FindMyApplyResponse(Long totalCount, Slice<StudyApplyDaoByUserId> dao) {
         this.totalCount = totalCount;

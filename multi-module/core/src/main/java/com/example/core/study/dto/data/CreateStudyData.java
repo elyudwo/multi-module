@@ -8,11 +8,11 @@ import com.example.core.study.domain.StudyEntity;
 import com.example.core.study.domain.StudyInfo;
 import com.example.core.study.domain.StudyPeriod;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import java.time.LocalDate;
 
 @Getter
-@AllArgsConstructor
 public class CreateStudyData {
 
     private final String title;
@@ -66,5 +66,21 @@ public class CreateStudyData {
                 .studyPeriod(period)
                 .masterUserId(masterUserId)
                 .build();
+    }
+
+    @Builder
+    public CreateStudyData(String title, String content, String chatUrl, MajorType major, Integer studyPerson, Integer penalty, String penaltyWay, boolean close, GenderType gender, StudyWayType studyWay, LocalDate studyStartDate, LocalDate studyEndDate) {
+        this.title = title;
+        this.content = content;
+        this.chatUrl = chatUrl;
+        this.major = major;
+        this.studyPerson = studyPerson;
+        this.penalty = penalty;
+        this.penaltyWay = penaltyWay;
+        this.close = close;
+        this.gender = gender;
+        this.studyWay = studyWay;
+        this.studyStartDate = studyStartDate;
+        this.studyEndDate = studyEndDate;
     }
 }
