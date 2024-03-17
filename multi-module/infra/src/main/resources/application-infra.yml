@@ -11,10 +11,10 @@ cloud:
     region:
       static: ap-northeast-2
     credentials:
-      access-key: AKIAUYKUIQPLDU4V6RUF
-      secret-key: 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
+      access-key: ${s3.access}
+      secret-key: ${s3.secret}
     s3:
-      bucket: study-hub-bucket
+      bucket: ${s3.name}
 
 jwt:
   secret: Nana
