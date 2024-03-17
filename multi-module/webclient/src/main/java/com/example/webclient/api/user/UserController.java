@@ -103,5 +103,4 @@ public class UserController {
         userService.deleteUserImage(userId.getId());
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
-
 }

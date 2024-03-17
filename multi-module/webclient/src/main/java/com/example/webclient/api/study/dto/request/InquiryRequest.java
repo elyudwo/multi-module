@@ -1,7 +1,6 @@
 package com.example.webclient.api.study.dto.request;
 
 import com.example.core.study.dto.data.InquiryData;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.lang.Nullable;

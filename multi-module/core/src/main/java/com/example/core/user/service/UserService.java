@@ -57,6 +57,7 @@ public class UserService {
         userRepository.delete(user);
     }
 
+    @Transactional
     public void uploadUserImage(Long userId, MultipartFile multipartFile) throws IOException {
         UserEntity user = userRepository.findById(userId).orElseThrow(RuntimeException::new);
         MultipartDto multipartDto = new MultipartDto(multipartFile.getName(), multipartFile.getSize(), multipartFile.getContentType(), multipartFile.getInputStream());
@@ -64,8 +65,10 @@ public class UserService {
         user.getUserImage().updateImage(imageRepository.saveImage(multipartDto));
     }
 
+    @Transactional
     public void deleteUserImage(Long userId) {
         UserEntity user = userRepository.findById(userId).orElseThrow(RuntimeException::new);
         user.getUserImage().updateImage(BASIC_PROFILE_IMAGE);
     }
+
 }
