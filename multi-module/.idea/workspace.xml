@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ab07346a-0f46-4f55-a431-e49618393d1a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/common/enums/StudyWayType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/dao/StudyDataByInquiry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/dao/UserData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/domain/StudyConstraints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/domain/StudyEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/domain/StudyInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/domain/StudyPeriod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/dto/CreateStudyData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/dto/InquiryData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/dto/UpdateStudyData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/repository/StudyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/repository/StudyRepositoryCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/repository/StudyRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/service/StudyFindService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/service/StudyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/study/service/StudyValidateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/core/user/domain/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/user/domain/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/core/user/service/UserValidateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/core/user/service/UserValidateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/example/core/CoreApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/com/example/core/CoreApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/infra">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/infra">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/core">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="multi-module" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2cX4EaoXw692vWI8V12gkxIhSyx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build multi-module.executor": "Run",
+    "Gradle.StudyRepositoryTest.스터디_저장.executor": "Run",
+    "Gradle.multi-module [dependencies].executor": "Run",
+    "Gradle.multi-module:core [build].executor": "Run",
+    "Gradle.multi-module:core [clean].executor": "Run",
+    "Gradle.multi-module:core [compileJava].executor": "Run",
+    "JUnit.StudyRepositoryTest.executor": "Run",
+    "JUnit.StudyRepositoryTest.스터디_저장.executor": "Run",
+    "JUnit.StudyRepositoryTest.스터디_전체조회.executor": "Run",
+    "JUnit.StudyRepositoryTest.스터디_조회.executor": "Run",
+    "JUnit.StudyRepositoryTest.회원이_신청한_스터디조회.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.CoreApplication.executor": "Run",
+    "Spring Boot.InfraApplication (1).executor": "Run",
+    "Spring Boot.InfraApplication.executor": "Run",
+    "Spring Boot.WebClientApplication.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/dudqk/OneDrive/바탕 화면/multi-module/multi-module/multi-module/build.gradle",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dudqk\OneDrive\바탕 화면\multi-module\multi-module\multi-module\core\src\test\resources" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.core.study.repository" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.WebClientApplication">
+    <configuration name="StudyRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="multi-module.core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.core.study.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.core.study.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.example.core.study.repository.StudyRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudyRepositoryTest.스터디_저장" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="multi-module.core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.core.study.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.core.study.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.example.core.study.repository.StudyRepositoryTest" />
+      <option name="METHOD_NAME" value="스터디_저장" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudyRepositoryTest.스터디_조회" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="multi-module.core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.core.study.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.core.study.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.example.core.study.repository.StudyRepositoryTest" />
+      <option name="METHOD_NAME" value="스터디_조회" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudyRepositoryTest.스터디_전체조회" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="multi-module.core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.core.study.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.core.study.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.example.core.study.repository.StudyRepositoryTest" />
+      <option name="METHOD_NAME" value="스터디_전체조회" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudyRepositoryTest.회원이_신청한_스터디조회" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="multi-module.core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.core.study.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.core.study.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.example.core.study.repository.StudyRepositoryTest" />
+      <option name="METHOD_NAME" value="회원이_신청한_스터디조회" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="multi-module.core.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.core.CoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InfraApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="multi-module.infra.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.kr.demo.infra.InfraApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InfraApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="multi-module.infra.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.kr.demo.infra.InfraApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="multi-module.webclient.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.webclient.WebClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StudyRepositoryTest.회원이_신청한_스터디조회" />
+        <item itemvalue="JUnit.StudyRepositoryTest.스터디_저장" />
+        <item itemvalue="JUnit.StudyRepositoryTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ab07346a-0f46-4f55-a431-e49618393d1a" name="Changes" comment="" />
+      <created>1708244478657</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708244478657</updated>
+      <workItem from="1708244479736" duration="6047000" />
+      <workItem from="1708425234230" duration="651000" />
+      <workItem from="1708435328622" duration="1794000" />
+      <workItem from="1708499955010" duration="1342000" />
+      <workItem from="1708519010827" duration="4022000" />
+      <workItem from="1708674043087" duration="107000" />
+      <workItem from="1708928258955" duration="2659000" />
+      <workItem from="1708942917072" duration="8777000" />
+      <workItem from="1708960453715" duration="2859000" />
+      <workItem from="1709028388577" duration="7231000" />
+      <workItem from="1709087149180" duration="9094000" />
+      <workItem from="1709099925043" duration="5735000" />
+      <workItem from="1709106565602" duration="11366000" />
+      <workItem from="1709170916014" duration="1726000" />
+      <workItem from="1709172649373" duration="9277000" />
+      <workItem from="1709187025636" duration="4787000" />
+      <workItem from="1709206172849" duration="8974000" />
+      <workItem from="1709215510424" duration="43000" />
+      <workItem from="1709273396016" duration="18130000" />
+      <workItem from="1709372517832" duration="9009000" />
+      <workItem from="1709702947565" duration="1906000" />
+      <workItem from="1709797229626" duration="1260000" />
+      <workItem from="1709981023005" duration="595000" />
+      <workItem from="1710060640000" duration="6918000" />
+      <workItem from="1710147108674" duration="1651000" />
+      <workItem from="1710157571142" duration="596000" />
+      <workItem from="1710237675388" duration="3929000" />
+      <workItem from="1710313205815" duration="4619000" />
+      <workItem from="1710655291094" duration="2315000" />
+      <workItem from="1710657629399" duration="1220000" />
+    </task>
+    <task id="LOCAL-00001" summary="[Docs] : Readme 추가">
+      <option name="closed" value="true" />
+      <created>1708250366225</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708250366225</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[Refactor] : web, core 모듈 간 yml 분리">
+      <option name="closed" value="true" />
+      <created>1708250406348</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708250406348</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[Feat] : 유저 도메인 전체 기능 구현">
+      <option name="closed" value="true" />
+      <created>1709100112709</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709100112709</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1709381001652</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709381001652</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[Feat] : 스터디 application layer 구현">
+      <option name="closed" value="true" />
+      <created>1710074065719</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710074065719</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[Feat] : 이메일 기능 application layer 구현">
+      <option name="closed" value="true" />
+      <created>1710656888070</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710656888070</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[Refactor] : yml 파일 s3 access-key, secret-key 수정">
+      <option name="closed" value="true" />
+      <created>1710657329729</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710657329729</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[Docs] : README 추가">
+      <option name="closed" value="true" />
+      <created>1710657831034</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710657831034</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[Docs] : Readme 추가" />
+    <MESSAGE value="[Refactor] : web, core 모듈 간 yml 분리" />
+    <MESSAGE value="[Feat] : 유저 도메인 전체 기능 구현" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="[Feat] : 스터디 application layer 구현" />
+    <MESSAGE value="[Feat] : 이메일 기능 application layer 구현" />
+    <MESSAGE value="[Refactor] : yml 파일 s3 access-key, secret-key 수정" />
+    <MESSAGE value="[Docs] : README 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Docs] : README 추가" />
+  </component>
+</project>
